@@ -168,6 +168,7 @@ span {
   box-shadow: none;
 }
 
+/* 
 .about {
   display: inline-flex;
   justify-content: center;
@@ -197,6 +198,98 @@ span {
 .about-content p {
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
+} */
+
+/* Base styles */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* Adjusted for mobile */
+  gap: 2rem;
+  background: var(--second--bg-color);
+  padding: 2rem;
+  /* Added padding for spacing */
+}
+
+.about-img img {
+  max-width: 100%;
+  /* Adjusted for responsiveness */
+}
+
+.heading {
+  text-align: center;
+  font-size: 4.5rem;
+}
+
+.about-content h2 {
+  text-align: center;
+  /* Adjusted for mobile */
+  line-height: 1.2;
+}
+
+.about-content h3 {
+  font-size: 2.6rem;
+}
+
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    /* Adjusted for larger screens */
+    padding: 4rem;
+    /* Adjusted for larger screens */
+  }
+
+  .about-img img {
+    width: 35vw;
+    /* Adjusted for larger screens */
+    max-width: none;
+    /* Reset max-width for larger screens */
+  }
+
+  .heading {
+    font-size: 5rem;
+    /* Adjusted for larger screens */
+  }
+
+  .about-content h2 {
+    text-align: left;
+    /* Reset text alignment for larger screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .about {
+    padding: 6rem;
+    /* Further adjustments for desktop */
+  }
+
+  .heading {
+    font-size: 6rem;
+    /* Further adjustments for desktop */
+  }
+
+  .about-content h2 {
+    font-size: 3rem;
+    /* Further adjustments for desktop */
+  }
+
+  .about-content h3 {
+    font-size: 3rem;
+    /* Further adjustments for desktop */
+  }
+
+  .about-content p {
+    font-size: 1.8rem;
+    /* Further adjustments for desktop */
+  }
 }
 
 .servcies h2 {
