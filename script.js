@@ -1,4 +1,5 @@
 /*==================== toggle icon navbar ====================*/
+
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -7,8 +8,8 @@ menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
 
-
 /*==================== scroll sections active link ====================*/
+
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
 
@@ -28,24 +29,24 @@ window.onscroll = () => {
     };
   });
 
-
-
-  /*==================== sticky navbar ====================*/
+/*==================== sticky navbar ====================*/
+  
   let header = document.querySelector('header');
 
   header.classList.add('sticky', window.scrollY > 100);
 
 
-  /*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
+/*==================== remove toggle icon and navbar when click navbar link (scroll) ====================*/
 
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
+
 /*==================== scroll reveal ====================*/
 
 ScrollReveal({
   reset: true,
-  distance: '2rem',
+  distance: '5rem',
   duration: 2000,
   delay: 200
 });
@@ -54,17 +55,8 @@ ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact 
 ScrollReveal().reveal('.home-contant h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-contant p, .about-content', { origin: 'right' });
 
-
-
 /*==================== typed js ====================*/
 
-// const typed = new Typed('.multiple-text', {
-//   String: ['Frontend Developer', 'React Js Developer', 'Bloger '],
-//   typeSpeed: 100,
-//   backSpeed: 100,
-//   baclDelay: 1000,
-//   loop: true
-// });
 const typed = new Typed('.multiple-text', {
   strings: ['Frontend Developer', 'React Js Developer', 'Blogger'],
   typeSpeed: 100,
